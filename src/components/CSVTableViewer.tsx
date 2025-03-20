@@ -72,7 +72,7 @@ const CSVTableViewer: React.FC = () => {
             setTableData(filteredData);
             setCurrentPage(1);
           },
-          error: (error) => console.error("Error parsing CSV: ", error),
+          error: (error: any) => console.error("Error parsing CSV: ", error),
         });
       };
       reader.readAsText(file, "UTF-8");

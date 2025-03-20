@@ -28,7 +28,7 @@ interface APIResponse {
 
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL; // Using NEXT_PUBLIC_ prefix for Next.js environment variables
-export async function processCandidates(payload: any): Promise<any> {
+export async function processCandidates(payload: FileProcessingPayload): Promise<APIResponse> {
   console.log("API_BASE_URL", API_BASE_URL);
   console.log("payload", payload);
   console.log("jsonify", JSON.stringify(payload));
