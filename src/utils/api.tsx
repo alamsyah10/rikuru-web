@@ -1,17 +1,17 @@
 // Candidate interface (for payload)
 interface Candidate {
-  no: number;
-  id?: string;
-  age?: number;
-  birthday?: string;
-  currentAffiliation?: string;
-  japaneseLevel?: string;
-  jlpt?: string;
-  englishLevel?: string;
-  schoolLocation?: string;
-  schoolName?: string;
-  faculty?: string;
-  specialization?: string;
+  no: number | string;
+  id?: string | number;
+  age?: number | string;
+  birthday?: string | number;
+  currentAffiliation?: string | number;
+  japaneseLevel?: string | number;
+  jlpt?: string | number;
+  englishLevel?: string | number;
+  schoolLocation?: string | number;
+  schoolName?: string | number;
+  faculty?: string | number;
+  specialization?: string | number;
 }
 
 // Separate type for the payload structure
